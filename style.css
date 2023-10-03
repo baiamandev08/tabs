@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.body {
+    font-family: Roboto sans-serif;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.img {
+    width: 200px;
+    object-fit: contain;
+    height: 200px;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    margin: 0 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    display: flex;
+    margin-top: 200px;
+}
+
+
+.tabs {
+    display: flex;
+    padding-top: 200px;
+    justify-content: center;
+}
+
+#one:checked ~ .two,
+#one:checked ~ .tree {
+    display: none;
+    transition: .5s;
+}
+
+#two:checked ~ .tree,
+#two:checked ~ .one {
+    display: none;
+    transition: .5s;
+}
+
+#tree:checked ~ .one,
+#tree:checked ~ .two {
+    display: none;
+    transition: .5s;
+}
+
+
